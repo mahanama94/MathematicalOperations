@@ -9,4 +9,9 @@ namespace Operations
         }
         return number * factorial(number - 1);
     }
+
+    int testFunction()
+    {
+
+    }
 }

@@ -1,11 +1,13 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.14)
 project(MethematicalOperations)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
+# add targers
 add_library(MathematicalOperations src/Operations.cpp)
 target_include_directories(MathematicalOperations PRIVATE include/)
 
+# add testing
 enable_testing()
 
 add_executable(testFactorials tests/TestFactorial.cpp)

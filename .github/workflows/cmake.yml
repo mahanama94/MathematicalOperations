@@ -49,4 +49,4 @@ jobs:
       working-directory: ${{runner.workspace}}
       shell: bash
       # Execute clang tidy tests
-      run: clang-tidy src/* -- -Iinclude
+      run: sudo apt update && sudo apt install clang-tidy && clang-tidy src/* -- -Iinclude
